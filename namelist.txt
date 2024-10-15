@@ -1,0 +1,148 @@
+<option value="">Select Item</option>
+            <option value="அரிசி (Rice)">அரிசி (Rice)</option>
+            <option value="துவரம் பருப்பு (Toor Dal)">துவரம் பருப்பு (Toor Dal)</option>
+            <option value="பாசிப்பருப்பு (Moong Dal)">பாசிப்பருப்பு (Moong Dal)</option>
+            <option value="உளுந்து பருப்பு (Urad Dal)">உளுந்து பருப்பு (Urad Dal)</option>
+            <option value="புளியங்கள் (Tamarind)">புளியங்கள் (Tamarind)</option>
+            <option value="மிளகாய் தூள் (Red Chilli Powder)">மிளகாய் தூள் (Red Chilli Powder)</option>
+            <option value="மஞ்சள் தூள் (Turmeric Powder)">மஞ்சள் தூள் (Turmeric Powder)</option>
+            <option value="சீரகம் (Cumin Seeds)">சீரகம் (Cumin Seeds)</option>
+            <option value="கடுகு (Mustard Seeds)">கடுகு (Mustard Seeds)</option>
+            <option value="கொத்தமல்லி விதை (Coriander Seeds)">கொத்தமல்லி விதை (Coriander Seeds)</option>
+            <option value="இலவங்கப்பட்டை (Cinnamon)">இலவங்கப்பட்டை (Cinnamon)</option>
+            <option value="ஏலக்காய் (Cardamom)">ஏலக்காய் (Cardamom)</option>
+            <option value="cloves">கிராம்பு (Cloves)</option>
+            <option value="bay_leaves">பிரியாணி இலை (Bay Leaves)</option>
+            <option value="ghee">நெய் (Ghee)</option>
+            <option value="oil">எண்ணெய் (Oil)</option>
+            <option value="salt">உப்பு (Salt)</option>
+            <option value="potato">உருளைக்கிழங்கு (Potato)</option>
+            <option value="onion">வெங்காயம் (Onion)</option>
+            <option value="tomato">தக்காளி (Tomato)</option>
+            <option value="cucumber">வெள்ளரிக்காய் (Cucumber)</option>
+            <option value="carrot">கேரட் (Carrot)</option>
+            <option value="beetroot">பீட்ரூட் (Beetroot)</option>
+            <option value="capsicum">குடைமிளகாய் (Capsicum)</option>
+            <option value="cauliflower">பூக்கோசு (Cauliflower)</option>
+            <option value="cabbage">முட்டைக்கோசு (Cabbage)</option>
+            <option value="brinjal">கத்திரிக்காய் (Brinjal)</option>
+            <option value="beans">அவரைக்காய் (Beans)</option>
+            <option value="ladyfinger">வெண்டைக்காய் (Lady's finger)</option>
+            <option value="pumpkin">பூசணி (Pumpkin)</option>
+            <option value="bottle_gourd">சுரைக்காய் (Bottle gourd)</option>
+            <option value="ridge_gourd">பீர்க்கங்காய் (Ridge gourd)</option>
+            <option value="snake_gourd">புடலங்காய் (Snake gourd)</option>
+            <option value="drumstick">முருங்கைக்காய் (Drumstick)</option>
+            <option value="banana_flower">வாழைப்பூ (Banana flower)</option>
+            <option value="raw_banana">வாழைக்காய் (Raw banana)</option>
+            <option value="plantain">வாழை (Plantain)</option>
+            <option value="yam">சேம்பருத்தி (Yam)</option>
+            <option value="colocasia">சேப்பங்கிழங்கு (Colocasia)</option>
+            <option value="sweet_potato">சர்க்கரை வள்ளிக்கிழங்கு (Sweet potato)</option>
+            <option value="jackfruit">பலாப்பழம் (Jackfruit)</option>
+            <option value="papaya">பப்பாளி (Papaya)</option>
+            <option value="mango">மாம்பழம் (Mango)</option>
+
+
+
+<label for="grocery_item">Select an item:</label>
+<input type="text" id="grocery_item" name="grocery_item" list="grocery_list" placeholder="Search...">
+<datalist id="grocery_list">
+  <option value="அரிசி (Arisi) - Rice">
+  <option value="பருப்பு (Paruppu) - Lentils">
+  <option value="துவரம் பருப்பு (Thuvaram Paruppu) - Toor Dal">
+  <option value="உளுந்து பருப்பு (Ulundhu Paruppu) - Urad Dal">
+  <option value="பாசிப்பருப்பு (Pasiparuppu) - Moong Dal">
+  <option value="வேர்க்கடலை (Verkadalai) - Peanuts">
+  <option value="கோதுமை மாவு (Godhumai Maavu) - Wheat flour">
+  <option value="ரவை (Ravai) - Semolina/Rava">
+  <option value="கடலை மாவு (Kadalai Maavu) - Gram flour">
+  <option value="பன்னீர் (Paneer) - Cottage cheese">
+  <option value="பாதாம் (Paadam) - Almonds">
+  <option value="பிஸ்தா (Pista) - Pistachios">
+  <option value="தேங்காய் துண்டு (Thengai Thundu) - Coconut milk">
+  <option value="வெங்காயம் (Vengayam) - Onion">
+  <option value="காரம் பொடி (Kaaram Podi) - Red chilli powder">
+  <option value="மஞ்சள் தூள் (Manjal Thool) - Turmeric powder">
+  <option value="மிளகு (Milagu) - Black pepper">
+  <option value="ஜீரகம் (Jeeragam) - Cumin seeds">
+  <option value="கடுகு (Kadugu) - Mustard seeds">
+  <option value="பெருங்காயம் (Perungayam) - Asafoetida">
+  <option value="காரம் பாட்டி (Kaaram Patti) - Cinnamon">
+  <option value="உலுந்து (Ulundhu) - Black gram">
+  <option value="பச்சை மிளகாய் (Pachai Milagai) - Green chilli">
+  <option value="பருப்பு பொரியல் (
+
+
+INSERT INTO product_list_tamil (name) VALUES
+('பெருங்காயம் (Perungayam)'),
+('சீரகம் (Seeragam)'),
+('சோம்பு (Soombu)'),
+('வெந்தயம் (Vendhayam)'),
+('கடுகு (Kadugu)'),
+('மிளகு (Milagu)'),
+('கசகசா (Kasa Kasa)'),
+('சோடா மாவு (Soda Maavu)'),
+('பிரிஞ்சி இலை (Brinji Elai)'),
+('கடலை பருப்பு (Kadalai Paruppu)'),
+('பிரியாணி மசாலா (Biryani Masala)'),
+('புளேட் அரிசி (Bullet Rice)'),
+('ஏலக்காய் (Elakkai)'),
+('முந்திரி (Munthiri)'),
+('சன்னா மசாலா (Channa Masala)'),
+('சிக்கன் மசாலா (Chicken Masala)'),
+('கொண்டைக்கடலை மாவு (Kadalai Maavu)'),
+('மிளகாய் தூள் (Milagai Thool)'),
+('குண்டு மிளகாய் (Gundu Milagai)'),
+('பட்டை (Pattai)'),
+('லவங்கம் (Lavangam)'),
+('காபி தூள் (Kaappi Thool)'),
+('தனியா மொழக்காய் (Dhaniya Mulu)'),
+('மல்லி தூள் (Dhaiya Thool)'),
+('மக்கா மாவு (Corn Flour Maavu)'),
+('உப்பு (Kal Uppu)'),
+('உலர் திராச்சை (Ular Thirachai)'),
+('இக்சோ ஸ்டீல் ஸ்க்ரப்பர் (Exo Steel Scrubber)'),
+('அவல் (Aval)'),
+('கரம் மசாலா (Garam Masala)'),
+('பூண்டு உருக்காய் (Poondu Urukai)'),
+('நெய் (Nei)'),
+('நல்லெண்ணை (Nallennai)'),
+('பச்சை பயறு (Pachai Payaru)'),
+('பீஸ் (Pachai Pattani)'),
+('இட்லி அரிசி (Idli Arisi)'),
+('வெல்லம் (Vellam)'),
+('மாங்காய் உருக்காய் (Maangai Urukai)'),
+('மராத்தி காய் (Marati Kaai)'),
+('மீல் மேக்கர் (Meal Maker)'),
+('எம்.ஜி.எஸ் ஆயில் (MGS Oil)'),
+('பாசி பருப்பு (Payatham Paruppu)'),
+('மட்டன் மசாலா (Mutton Masala)'),
+('பச்சை அரிசி (Pachai Arisi)'),
+('வேர்க்கடலை (Verkadalai)'),
+('மிளகு தூள் (Milagu Thool)'),
+('தூல் உப்பு (Thool Uppu)'),
+('புளங்கள் அரிசி (Pulungal Arisi)'),
+('ரசம் பொடி (Rasam Podi)'),
+('சிவப்பு மூக்கடலை (Sivappu Mookadalai)'),
+('மைதா மாவு (Maida Maavu)'),
+('அரிசி மாவு (Arisi Maavu)'),
+('பொட்டு கடலை (Pottu Kadalai)'),
+('சபீனா (Sabina)'),
+('கேசரி பவுடர் (Kesari Powder)'),
+('சாம்பார் பொடி (Sambar Podi)'),
+('ரவை (Ravai)'),
+('அண்ணாச்சி பூ (Annachi Poo)'),
+('சக்கரை (Sakkarai)'),
+('புளி (Puli)'),
+('ஜவ்வரிசி (Javvarisi)'),
+('தீ தூள் (Tea Thool)'),
+('துவரம் பருப்பு (Thuvaram Paruppu)'),
+('மஞ்சள் தூள் (Manjal Thool)'),
+('உளுத்தம் பருப்பு (Uluttam Paruppu)'),
+('வத்தல் (Vathal)'),
+('சேமியா (Semiya)'),
+('விம் பார் (Vim Bar)'),
+('வினெகர் (Vinegar)'),
+('கோதுமை மாவு (Godhumai Maavu)'),
+('வெள்ளை மூக்கடலை (Vellai Mookadalai)');

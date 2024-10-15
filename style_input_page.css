@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  padding: auto;
+}
+
+.error {
+  background: #bc2525;
+  color: #c89595;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #95a6d5;
+}
+
+.item {
+  width: 550px;
+  background-color: #697aa8;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  margin: 90px 0 0 2%;
+  padding: 10px;
+  position: absolute;
+  left: 10px;
+}
+
+.item h1 {
+  text-align: center;
+  color: black;
+  width: auto;
+  height: auto;
+  padding: 20px 0 20px 0;
+  background-color: #b3c2ee;
+}
+
+.item form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.item form label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 50px;
+  flex-direction: row;
+  background-color: #190f44;
+  color: white;
+  padding: 10px;
+}
+
+.item form input,
+.item form select{
+  width: 60%;
+  height: 50px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  background-color: white;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.item form button,
+.item button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #190f44;
+  color: white;
+  border: 2;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.item form button:hover,
+.item button:hover {
+  background-color: #95acf3;
+  color: black;
+  transition: background-color 0.2s;
+}
+
+#back {
+  width: 150px;
+  padding: 15px;
+  margin: 20px 50px 20px;
+  background-color: #190f44;
+  color: white;
+  border: 200px;
+  border-color: black;
+  cursor: pointer;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+#back:hover {
+  background-color: #6388f4;
+  color: black;
+  transition: background-color 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    width: 80%;
+    margin: 50px auto;
+    padding: 10px;
+    float: none;
+    order: 0;
+  }
+
+  .item form label {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .item form input,
+  .item form select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .item form button,
+  .item button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  select.chosen {
+    position: absolute;
+  }
+
+  /* Chosen plugin styles */
+  .chosen-container {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  #purchaseList,
+  #distributionList,
+  #preheader {
+    display: none;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 860px;
+  height: 550px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  /*top: 50%;*/
+  right: 10px;
+  /*transform: translate(50%, -50%);*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 3px;
+  background-color: white;
+  position: absolute;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  margin: 120px 1% 0 1%;
+}
+
+.container table {
+  border-collapse: separate;
+  table-layout: auto;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.container table tr:nth-child(-n+5) {
+  background-color: yellowgreen;
+}
+.container td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #0e0e0e;
+}
+.container th{
+  padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #190f44;
+    font-weight: bold;
+    position: sticky; /* add this to make the header sticky*/
+    top: 0; /*add this to position the header at the top */
+    z-index: 1;
+    border: 1px solid #a08383;
+}
+#preheader {
+  width: 100%;
+  max-width: 860px;
+  right: 10px;
+  padding: 3px;
+  justify-content: left;
+  background-color: white;
+  position: absolute;
+  margin: 85px 1% 0 1%;
+}
+#preheader h1 {
+  text-align:center;
+  color: black;
+  padding-bottom: 5px;
+}
+
+
+
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  justify-content: center;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#toast.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+select.chosen {
+  position: absolute;
+}
+
+/* Chosen plugin styles */
+.chosen-container {
+  width: 60% !important;
+  height: 50px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  background-color: white;
+  flex-direction: row;
+  padding: 10px;
+}
+#messageDiv {
+  display: none;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  background-color: #4ff90c; /* Green background for success */
+  color: #0c160c; /* Dark green text color */
+}
+
+.error-message {
+  background-color: #e50b0b; /* Red background for error */
+  color: white; /* Dark red text color */
+}
+/* Style for the disabled button */
+.disabled-button {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.6;
+}

@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:medium;
+    padding: auto;
+  }
+  .error {
+    background: #bc2525;
+    color: #c89595;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+ }
+  
+  body {
+    background-color: #95a6d5;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #190f44;
+    color: white;
+    padding: 10px;
+  }
+.logo-left {
+  flex: 0 0 130px; /* Adjust the width of the left logo container */
+  display: flex;
+  align-items: center;
+}
+
+.logo-right {
+  flex: 0 0 160px; /* Adjust the width of the right logo container */
+  display: flex;
+  align-items: center;
+}
+
+
+.logo-left img,
+.logo-right img {
+  max-width: 100%;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+}
+  
+  .header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  
+  .item {
+    width: 500px;
+    background-color: #697aa8;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: auto;
+    margin-top: 3%;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .item h1 {
+    text-align: center;
+    color:black;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+    background-color: #b3c2ee;
+    border-bottom: 1px solid #dee0e4;
+  }
+  
+  .item form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .item form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 50px;
+    flex-direction: row;
+    background-color: #190f44;
+    color: white;
+    padding: 10px;
+  }
+  
+  .item form input,.item form select{
+    width: 60%;
+    height: 50px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: white;
+    flex-direction: row;
+    padding: 10px;
+  }
+  
+  .item form button,.item button{
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #190f44;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .item form button:hover,.item button:hover {
+    background-color: #95acf3;
+    color: black;
+    transition: background-color 0.2s;
+  }
+  #back {
+    width: 150px;
+    padding: 15px;
+    margin: 20px 50px 20px;
+    background-color: #190f44;
+    color: white;
+    border: 200px;
+    border-color: black;
+    cursor: pointer;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  #back:hover {
+    background-color: #6388f4;
+    color: black;
+    transition: background-color 0.2s;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .item {
+      width: 80%;
+      margin: 50px auto;
+      padding: 10px;
+    }
+  
+    .item form label {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+    }
+  
+    .item form input, .item form select {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+  
+    .item form button, .item button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+  }
